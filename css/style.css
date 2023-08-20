@@ -19,6 +19,10 @@ body{
 
 
 }
+*:focus{
+    outline: 2px dashed #7296ec;
+    outline-offset: 3px;
+}
 .container{
     width: 100%;
     max-width: 1240px;
@@ -37,7 +41,7 @@ body{
     padding-top: 30px;
     padding-bottom: 30px;
     background-color:#F6F6F6;
-    margin-bottom:30px;
+   
 }
 .site-header-top-container {
     display: flex;
@@ -99,6 +103,17 @@ body{
 .lang-toggle-link-active{
     background-color: #fff;
     color:#000;
+}
+/* Global-Search-Form */
+.global-search-form-input{
+    padding-top: 15px;
+    padding-bottom: 13px;
+    padding-right: 40px;
+    padding-left: 20px;
+    border:0;
+    border-radius:60px;
+    font-size: 14px;
+    line-height: none;
 }
 /* /* BUTTON */
 .button {   
