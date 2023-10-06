@@ -460,6 +460,9 @@ button:active{
     height: 338px;
     border-radius:15px;
 }
+.sidebar-ad-img-list{
+    height: 553px;
+}
 /* Footer */
 .site-footer {
     padding-top: 40px;
