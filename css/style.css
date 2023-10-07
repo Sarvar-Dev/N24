@@ -107,12 +107,16 @@ body{
 .global-search-form-input{
     padding-top: 15px;
     padding-bottom: 13px;
-    padding-right: 40px;
-    padding-left: 20px;
+    padding-right: 20px;
+    padding-left: 40px;
     border:0;
     border-radius:60px;
     font-size: 14px;
-    line-height: none;
+    line-height: normal;
+    background-image: url("../img/list/icon-search.svg");
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 20px;
 }
 
 /* <!-- AUTH FORM --> */
@@ -152,6 +156,7 @@ button:active{
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
 .site-header-bottom{
     display: flex;
     flex-wrap: wrap;
@@ -178,8 +183,9 @@ button:active{
     opacity: 0.6;
 }
 /* HR LINE */
-.header-hr{
-    margin-bottom:30px;
+
+.header-hr:not(:last-child){
+    margin-bottom: 40px;
 }
 /* SITE-HEADER-BANNER */
 .site-header-banner-link{
@@ -280,6 +286,10 @@ button:active{
     border-radius:10px;
     display: flex;
     justify-content: space-between;
+    background-image:url("../img/list/global-notificatsion-bg.jpg");
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
 }
 .notificatsion-cta-text {
     font-size: 20px;
@@ -564,4 +574,103 @@ button:active{
     width: 25px;
     height: 25px;
     object-fit: contain;
+}
+
+/* CONTACT PAGE */
+.contact-page-heading{
+    margin-top: 0;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 20px;
+    color:#000;
+}
+
+.contact-page-form{
+    width: 696px;
+    display: flex;
+    flex-direction:column;
+}
+/* Button */
+.contact-page-form-submit{
+    margin-top: 20px;
+    align-self: flex-end;
+}
+/* FORM */
+.form-group:not(:last-child){
+    margin-bottom: 10px;
+}
+.form-field{
+    display: block;
+    width: 100%;
+    padding: 18px 20px;
+    border:1px solid rgba(0,0,0,0.2);
+    border-radius:10px;
+}
+.form-field-textarea{
+    min-height: 180px;
+    resize: vertical;
+}
+.form-groups-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+.form-groups-wrapper:not(:last-child){
+    margin-bottom: 10px;
+}
+.form-groups-wrapper .form-group{
+    width:343px;
+    margin-bottom: 0;
+}
+.form-groups-wrapper .form-group:not(:last-child){
+    margin-right: 10px;
+}
+/* CONTACT-PAGE-INFO */
+.contact-page-content{
+    display: flex;
+}
+.contact-page-info {
+    width: 494px;
+    padding-left: 10px;
+    margin:0;
+
+}
+.definition-card {
+    padding: 20px 25px;
+    background-color:#f6f6f6;
+    color:#000;
+    margin:0;
+    border-radius:10px;
+}
+.definition-card-item {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.definition-card-item:not(:last-child){
+    border-bottom:1px solid #d2d2d2;
+}
+.definition-card-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 7px;
+}
+.definition-card-value {
+    margin: 0;
+    line-height: 19px;
+}
+
+
+
+/* BG -RETINA */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .notificatsion-cta{
+        background-image:url("../img/list/global-notificatsion-bg@2x.jpg")
+    }
 }
